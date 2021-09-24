@@ -3,7 +3,7 @@ int startY = 500;
 int endX = 0;
 int endY = 500;
 void setup(){
-  size(500,500);
+  size(500,600);
   strokeWeight(10);
   background(42,43,42);
 }
