@@ -11,9 +11,12 @@ body {
     margin-left: auto;
     margin-right: auto
 }
+h1{
+	color:pink;
+}
 
 header {
-	
+	color:pink;
 }
 
 footer {
