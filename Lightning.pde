@@ -14,7 +14,7 @@ void draw(){
   while(endX<=1000){
     //stroke((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
     endX=startX+(int)(Math.random()*10);
-    endY=startY+(int)(Math.random()*10);
+    endY=startY+(int)(Math.random()*10)-8;
     line(startX+10,startY+10,endX+10,endY+10);
     startX=endX;
     startY=endY;
