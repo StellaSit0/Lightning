@@ -26,3 +26,47 @@ void mousePressed(){
   endX=0;
   endY=500;
 }
+
+
+Die num1;
+void setup(){
+  size(500,500);
+  num1 = new Die(250,250);
+  noLoop();
+}
+void draw(){
+  background(225);
+  num1 = new Die(250,250);
+  num1.show();
+  //your code here
+}
+void mousePressed(){
+  redraw();
+}
+class Die //models one single dice cube
+{
+  //member variable declarations here
+  int sizeOfDice, theX, theY;
+  Die(int x, int y){ //constructor
+    //variable initializations here
+    sizeOfDice=50;
+    theX=x;
+    theY=y;
+  }
+  void roll(){
+    if(Math.random()*7<1){
+      
+    }
+    //your code here
+  }
+  void show(){
+    square(50,50,50);
+    fill(0,0,0);
+    ellipse(75,75,10,10);
+    fill(255,255,255);
+    square(100,100,50);
+    fill(0,0,0);
+    ellipse(115,125,10,10);
+    ellipse(135,125,10,10);
+  }
+}
